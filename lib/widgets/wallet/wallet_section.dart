@@ -9,7 +9,7 @@ class WalletSection extends StatelessWidget {
   Widget build(BuildContext context) {
     Color primary = Theme.of(context).primaryColor;
     return Container(
-      padding: EdgeInsets.all(16),
+      padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
       child: Card(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
         elevation: 4,

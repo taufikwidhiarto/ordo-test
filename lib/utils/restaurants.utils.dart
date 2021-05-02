@@ -15,22 +15,22 @@ class RestaurantUtils {
           love: 19000),
       MenuDto(
           image: "https://picsum.photos/id/326/300/300",
-          name: "",
+          name: "Ice Lemon",
           price: 11000,
           love: 12000000),
       MenuDto(
           image: "https://picsum.photos/id/292/300/300",
-          name: "",
+          name: "Burger Combo XL",
           price: 11000,
           love: 1000),
       MenuDto(
           image: "https://picsum.photos/id/1060/300/300",
-          name: "",
+          name: "Burger",
           price: 11000,
           love: 1000),
       MenuDto(
           image: "https://picsum.photos/id/225/300/300",
-          name: "",
+          name: "Hotdog",
           price: 11000,
           love: 1000)
     ];

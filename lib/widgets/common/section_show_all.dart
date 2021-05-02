@@ -19,7 +19,7 @@ class SectionShowAll extends StatelessWidget {
         child: Container(
           padding: EdgeInsets.all(8),
           decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(8),
+              borderRadius: BorderRadius.circular(12),
               color: Theme.of(context).primaryColor),
           child: Row(
             children: [

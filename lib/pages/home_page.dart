@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:ordotest/utils/orders.utils.dart';
-import 'package:ordotest/widgets/order/order_item.dart';
 import 'package:ordotest/widgets/order/order_section.dart';
 import 'package:ordotest/widgets/restaurant/restaurant_menu_section.dart';
+import 'package:ordotest/widgets/statistics/statistic_section.dart';
 import 'package:ordotest/widgets/wallet/wallet_section.dart';
 
 class HomePage extends StatefulWidget {
@@ -20,6 +19,7 @@ class _HomePageState extends State<HomePage> {
       child: Scaffold(
         body: ListView(
           children: [
+            StatisticSection(),
             WalletSection(),
             Container(),
             OrderSection(),
