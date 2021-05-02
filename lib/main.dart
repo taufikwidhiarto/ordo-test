@@ -55,8 +55,10 @@ class _MyHomePageState extends State<MyHomePage> {
         elevation: 0,
         backgroundColor: Colors.white,
         flexibleSpace: Container(
+          margin: EdgeInsets.only(top: 30),
           padding: EdgeInsets.symmetric(horizontal: 16),
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.end,
             children: [
               Container(
                 width: 30,
