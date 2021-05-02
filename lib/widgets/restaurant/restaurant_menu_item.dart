@@ -54,10 +54,10 @@ class RestaurantMenuItem extends StatelessWidget {
               IconText(
                 icon: Icons.border_color,
                 text: "Edit",
-                boxShape: BoxShape.circle,
+                boxShape: BoxShape.rectangle,
                 backgroundColor: Theme.of(context).primaryColor,
                 iconColor: Colors.white,
-                size: 30,
+                size: 26,
               ),
             ],
           ),

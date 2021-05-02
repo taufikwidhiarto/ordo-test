@@ -57,27 +57,29 @@ class OrderItem extends StatelessWidget {
                     boxShape: BoxShape.circle,
                     backgroundColor: Theme.of(context).primaryColor,
                     iconColor: Colors.white,
-                    size: 30,
+                    size: 28,
                   ),
                 ],
               ),
             ),
           ),
-          Positioned(
-            top: -4,
-            right: -4,
-            child: ClipOval(
-              child: Container(
-                width: 24,
-                height: 24,
-                padding: EdgeInsets.all(6),
-                color: Color(0xffED6825),
-                child: FittedBox(
-                  child: Icon(Icons.priority_high, color: Colors.white),
-                ),
-              ),
-            ),
-          ),
+          order.alert
+              ? Positioned(
+                  top: -4,
+                  right: -4,
+                  child: ClipOval(
+                    child: Container(
+                      width: 24,
+                      height: 24,
+                      padding: EdgeInsets.all(6),
+                      color: Color(0xffED6825),
+                      child: FittedBox(
+                        child: Icon(Icons.priority_high, color: Colors.white),
+                      ),
+                    ),
+                  ),
+                )
+              : Container(),
         ],
       ),
     );

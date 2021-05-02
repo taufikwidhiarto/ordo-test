@@ -10,9 +10,9 @@ class OrderUtils {
           alert: true),
       OrderDto(
           userImage: "https://picsum.photos/id/1011/300/300",
-          userName: "Gibran Mulyana",
+          userName: "Agnes Gonzales",
           status: OrderStatusEnum.ongoing,
-          alert: true),
+          alert: false),
       OrderDto(
           userImage: "https://picsum.photos/id/1010/300/300",
           userName: "Mattew Wiebe",
@@ -22,7 +22,7 @@ class OrderUtils {
           userImage: "https://picsum.photos/id/1025/300/300",
           userName: "Samantha Sophia",
           status: OrderStatusEnum.pending,
-          alert: true),
+          alert: false),
     ];
   }
 
