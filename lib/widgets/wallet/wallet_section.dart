@@ -17,7 +17,7 @@ class WalletSection extends StatelessWidget {
         child: Container(
           padding: EdgeInsets.only(top: 22, right: 16, bottom: 28, left: 16),
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
               Column(
@@ -53,36 +53,29 @@ class WalletSection extends StatelessWidget {
                   )
                 ],
               ),
-              Expanded(
-                child: Row(
-                  children: [
-                    Container(
-                      constraints: BoxConstraints(maxWidth: 100),
-                      child: IconText(
-                        icon: Icons.print,
-                        text: "Carikan",
-                        boxShape: BoxShape.rectangle,
-                        backgroundColor: Colors.white,
-                        iconColor: primary,
-                        iconPadding: EdgeInsets.all(2),
-                        size: 30,
-                        margin: EdgeInsets.symmetric(horizontal: 12),
-                      ),
-                    ),
-                    Container(
-                      constraints: BoxConstraints(maxWidth: 100),
-                      child: IconText(
-                        icon: Icons.add,
-                        text: "Tambah Saldo",
-                        boxShape: BoxShape.rectangle,
-                        backgroundColor: Colors.white,
-                        iconColor: primary,
-                        iconPadding: EdgeInsets.all(2),
-                        size: 30,
-                      ),
-                    ),
-                  ],
-                ),
+              Wrap(
+                direction: Axis.horizontal,
+                children: [
+                  IconText(
+                    icon: Icons.print,
+                    text: "Carikan",
+                    boxShape: BoxShape.rectangle,
+                    backgroundColor: Colors.white,
+                    iconColor: primary,
+                    iconPadding: EdgeInsets.all(2),
+                    size: 30,
+                    margin: EdgeInsets.symmetric(horizontal: 8),
+                  ),
+                  IconText(
+                    icon: Icons.add,
+                    text: "Tambah Saldo",
+                    boxShape: BoxShape.rectangle,
+                    backgroundColor: Colors.white,
+                    iconColor: primary,
+                    iconPadding: EdgeInsets.all(2),
+                    size: 30,
+                  )
+                ],
               ),
             ],
           ),

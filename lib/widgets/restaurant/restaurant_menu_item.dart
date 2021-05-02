@@ -37,11 +37,13 @@ class RestaurantMenuItem extends StatelessWidget {
                     children: [
                       Text(
                         menu.name,
+                        overflow: TextOverflow.ellipsis,
                         style: TextStyle(
                             fontWeight: FontWeight.w900, fontSize: 16),
                       ),
                       Text(
                         FormatedUtils.getCurrency(menu.price),
+                        overflow: TextOverflow.ellipsis,
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 12),
                       )
